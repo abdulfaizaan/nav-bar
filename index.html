@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nav bar</title>
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar target">
+		<a href="#" class="nav-link">
+			<i class="ion ion-home"></i>
+			<span>Home</span>
+		</a>
+
+		<a href="#" class="nav-link">
+			<i class="ion ion-ios7-world"></i>
+			<span>About</span>
+		</a>
+		<a href="#" class="nav-link">
+			<i class="ion ion-chatboxes"></i>
+			<span>Contact</span>
+		</a>		
+		<a href="#" class="nav-link">
+			<i class="ion ion-person-stalker"></i>
+			<span>Service</span>
+		</a>
+	</nav>
+	<div class="menu target"></div>
+	<script>
+		document.querySelector('.menu').addEventListener('click',()=>{
+			document.querySelectorAll('.target').forEach((item) =>{
+				item.classList.toggle('change')
+			})
+		})
+	</script>
+</body>
+</html>
